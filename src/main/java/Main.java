@@ -1,9 +1,26 @@
 import vehiculos.Auto;
+import vehiculos.Fabrica;
 import vehiculos.Moto;
+import vehiculos.Transporte;
 import vehiculos.Vehiculo;
 
 public class Main {
 	public static void main(String[] args) {
+		
+		Transporte t1 = Fabrica.read("Auto");
+		Transporte t2 = Fabrica.read("Moto");
+		
+		t1.arrancar();
+		
+		t1.detner();
+		
+		System.out.println(t1.tipo());
+		
+		t2.arrancar();
+		t2.detner();
+		
+		System.out.println(t2.tipo());
+		
 			Vehiculo v1 = new Vehiculo();
 			
 			Vehiculo a1  = new Auto();
@@ -28,6 +45,8 @@ public class Main {
 				System.out.println(ves.toString());
 				
 			}
-			
+	
+	
+	
 	}
 }

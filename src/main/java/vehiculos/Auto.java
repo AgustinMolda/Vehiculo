@@ -1,6 +1,6 @@
 package vehiculos;
 
-public class Auto  extends Vehiculo{
+public class Auto  extends Vehiculo implements Transporte{
 	private int numeroRuedas;
 	private int rodado;
 	private int numeroChasis;
@@ -50,6 +50,21 @@ public class Auto  extends Vehiculo{
 
 	public void setNumeroChasis(int numeroChasis) {
 		this.numeroChasis = numeroChasis;
+	}
+
+	public void arrancar() {
+		System.out.println("Estoy arrancando el Auto");
+		
+	}
+
+	public void detner() {
+		System.out.println("Estoy deteniendo el Auto");
+		
+	}
+
+	public String tipo() {
+		// TODO Auto-generated method stub
+		return "Auto";
 	}
 
 	

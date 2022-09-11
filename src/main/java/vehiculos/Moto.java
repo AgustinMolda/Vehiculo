@@ -1,6 +1,6 @@
 package vehiculos;
 
-public class Moto extends Vehiculo {
+public class Moto extends Vehiculo implements Transporte {
 
 	private int velocidad = 100;
 	private int aceleracion = 50;
@@ -51,6 +51,18 @@ public class Moto extends Vehiculo {
 	}
 	private void setNombre(String nombre) {
 		this.nombre = nombre;
+	}
+	public void arrancar() {
+		System.out.println("Estoy arrancando la Moto");
+		
+	}
+	public void detner() {
+		System.out.println("Estoy deteniendo la Moto");
+		
+	}
+	public String tipo() {
+		// TODO Auto-generated method stub
+		return "Moto";
 	}
 
 	 
