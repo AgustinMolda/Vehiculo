@@ -15,22 +15,22 @@ public class Auto extends Vehiculo implements VehiculoMotorizado {
 	 
 
 	public void encender() {
-		// TODO Auto-generated method stub
+		System.out.println("Encendiendo Auto");
 
 	}
 
 	public void apargar() {
-		// TODO Auto-generated method stub
+		System.out.println("Apagando Auto");
 
 	}
 
 	public void recargarEnergina() {
-		// TODO Auto-generated method stub
+		System.out.println("Cargando tanque auto");
 
 	}
 
 	public void gastarEnergia() {
-		// TODO Auto-generated method stub
+		System.out.println("Gastando nafta auto");
 
 	}
 	
@@ -48,5 +48,15 @@ public class Auto extends Vehiculo implements VehiculoMotorizado {
 			System.out.println("pasando cambio a: "+cambio);
 		}
 	}
+
+
+	@Override
+	public String toString() {
+		return "Auto [tipo=" + tipo + ", marca=" + marca + ", modelo=" + modelo + ", matricula=" + matricula
+				+ ", velocidad=" + velocidad + ", cambio=" + cambio + ", motor=" + motor + "]";
+	}
+
+
+	
 
 }
